@@ -3,6 +3,7 @@ import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Section } from './Section/Section';
 import { Statistics } from './Statistics/Statistics';
 import { StatisticEmpty } from './StatisticEmpty/StatisticEmpty';
+import { Container } from './Container.styled';
 
 export class App extends Component {
   state = {
@@ -34,7 +35,7 @@ export class App extends Component {
     const { good, neutral, bad } = this.state;
     const isFeedback = good + neutral + bad;
     return (
-      <div>
+      <Container>
         <Section title="Please leave feedback">
           <FeedbackOptions
             onLeaveFeedback={this.handleClick}
@@ -54,7 +55,7 @@ export class App extends Component {
             <StatisticEmpty message="There is no feedback" />
           )}
         </Section>
-      </div>
+      </Container>
     );
   }
 }
