@@ -4,6 +4,7 @@ import { Section } from './Section/Section';
 import { Statistics } from './Statistics/Statistics';
 import { StatisticEmpty } from './StatisticEmpty/StatisticEmpty';
 import { Container } from './Container.styled';
+import { GlobalStyle } from './GlobalStyle';
 
 export class App extends Component {
   state = {
@@ -55,6 +56,7 @@ export class App extends Component {
             <StatisticEmpty message="There is no feedback" />
           )}
         </Section>
+        <GlobalStyle />
       </Container>
     );
   }

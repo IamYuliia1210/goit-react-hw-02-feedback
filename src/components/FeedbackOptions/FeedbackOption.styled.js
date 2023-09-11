@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Button = styled.button`
-  margin-right: 8px;
+  margin-right: 10px;
+  margin-bottom: 20px;
   padding: 8px 12px;
   border-radius: 3px;
   text-transform: capitalize;
